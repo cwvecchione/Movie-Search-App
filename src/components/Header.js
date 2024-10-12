@@ -31,11 +31,11 @@ export const Header = () => {
 
     return (
         <header>      
-            <nav className="bg-white border-b-2 border-gray-200 px-2 sm:px-4 py-2 dark:bg-gray-900 dark:border-b-1 dark:border-gray-900">
+            <nav className="bg-white border-b-2 border-gray-200 px-2 sm:px-4 py-2 dark:bg-gray-800 dark:border-b-1 dark:border-gray-900">
             <div className="flex flex-wrap justify-between items-center mx-auto">
                 <Link to="/" className="flex items-center">
-                    <img src={Logo} className="mr-2 h-8 sm:h-9" alt="CW Movie Finder Logo" />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CW Movie Finder</span>
+                    <img src={Logo} className="mr-2 h-16" alt="CW Movie Finder Logo" />
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Movie Finder</span>
                 </Link>
 
                 <div id="mobile-nav" className="flex md:order-2">
@@ -70,7 +70,7 @@ export const Header = () => {
                         <input type="text" id="search-navbar" name="search" className="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." autoComplete="off" />
                     </form>
                     </div>
-                    <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-800 dark:border-gray-700">
                     <li>
                         <NavLink to="/" className={({isActive}) => isActive ? activeClass : inActiveClass } end>Home</NavLink>
                     </li>
